@@ -6,4 +6,5 @@ public interface Window {
     void setBorderRadius(float radius);
     void setTextStyle(TextStyle textStyle);
     void setOpacity(float opacity);
+    void draw();
 }
