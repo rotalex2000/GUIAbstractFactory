@@ -8,7 +8,8 @@ public class HighlightedButton implements Button {
     private TextStyle textStyle;
 
     public HighlightedButton() {
-        this.draw();
+        this.setBorderRadius(0);
+        this.setTextStyle(TextStyle.BOLD);
     }
 
     @Override
@@ -23,8 +24,6 @@ public class HighlightedButton implements Button {
 
     @Override
     public void draw() {
-        this.setBorderRadius(0);
-        this.setTextStyle(TextStyle.BOLD);
         System.out.println("Generated highlighted button.");
     }
 }

@@ -9,7 +9,9 @@ public class ClassicWindow implements Window {
     private float opacity;
 
     public ClassicWindow() {
-        this.draw();
+        setBorderRadius(0);
+        setTextStyle(TextStyle.NORMAL);
+        setOpacity(0.5F);
     }
 
     @Override
@@ -29,9 +31,6 @@ public class ClassicWindow implements Window {
 
     @Override
     public void draw() {
-        setBorderRadius(0);
-        setTextStyle(TextStyle.NORMAL);
-        setOpacity(0.5F);
         System.out.println("Generated classic window.");
     }
 }

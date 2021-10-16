@@ -8,7 +8,8 @@ public class RoundedButton implements Button {
     private TextStyle textStyle;
 
     public RoundedButton() {
-        this.draw();
+        this.setBorderRadius(0.5F);
+        this.setTextStyle(TextStyle.NORMAL);
     }
 
     @Override
@@ -23,8 +24,6 @@ public class RoundedButton implements Button {
 
     @Override
     public void draw() {
-        this.setBorderRadius(0.5F);
-        this.setTextStyle(TextStyle.NORMAL);
         System.out.println("Generated rounded button.");
     }
 }

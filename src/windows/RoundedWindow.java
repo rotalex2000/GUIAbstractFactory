@@ -9,7 +9,9 @@ public class RoundedWindow implements Window {
     private float opacity;
 
     public RoundedWindow() {
-        this.draw();
+        setBorderRadius(0.5F);
+        setTextStyle(TextStyle.NORMAL);
+        setOpacity(0);
     }
 
     @Override
@@ -29,9 +31,6 @@ public class RoundedWindow implements Window {
 
     @Override
     public void draw() {
-        setBorderRadius(0.5F);
-        setTextStyle(TextStyle.NORMAL);
-        setOpacity(0);
         System.out.println("Generated rounded window.");
     }
 }

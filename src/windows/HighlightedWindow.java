@@ -9,7 +9,9 @@ public class HighlightedWindow implements Window {
     private float opacity;
 
     public HighlightedWindow() {
-        this.draw();
+        setBorderRadius(0);
+        setTextStyle(TextStyle.BOLD);
+        setOpacity(0);
     }
 
     @Override
@@ -29,9 +31,6 @@ public class HighlightedWindow implements Window {
 
     @Override
     public void draw() {
-        setBorderRadius(0);
-        setTextStyle(TextStyle.BOLD);
-        setOpacity(0);
         System.out.println("Generated highlighted window.");
     }
 }

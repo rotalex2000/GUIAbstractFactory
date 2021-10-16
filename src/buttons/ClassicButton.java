@@ -8,7 +8,8 @@ public class ClassicButton implements Button {
     private TextStyle textStyle;
 
     public ClassicButton() {
-        this.draw();
+        this.setBorderRadius(0);
+        this.setTextStyle(TextStyle.NORMAL);
     }
 
     @Override
@@ -23,8 +24,6 @@ public class ClassicButton implements Button {
 
     @Override
     public void draw() {
-        this.setBorderRadius(0);
-        this.setTextStyle(TextStyle.NORMAL);
         System.out.println("Generated classic button.");
     }
 }
