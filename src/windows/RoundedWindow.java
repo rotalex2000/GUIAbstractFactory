@@ -11,7 +11,7 @@ public class RoundedWindow implements Window {
     public RoundedWindow() {
         setBorderRadius(0.5F);
         setTextStyle(TextStyle.NORMAL);
-        setOpacity(0);
+        setOpacity(1);
     }
 
     @Override

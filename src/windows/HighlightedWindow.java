@@ -11,7 +11,7 @@ public class HighlightedWindow implements Window {
     public HighlightedWindow() {
         setBorderRadius(0);
         setTextStyle(TextStyle.BOLD);
-        setOpacity(0);
+        setOpacity(1);
     }
 
     @Override
